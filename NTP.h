@@ -1,6 +1,9 @@
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 #include <Time.h>
+#ifndef _Time_h
+#include <TimeLib.h>
+#endif
 
 #ifndef NTP_H
 #define NTP_H
