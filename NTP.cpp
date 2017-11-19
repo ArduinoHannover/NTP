@@ -14,7 +14,7 @@ NTP::NTP(const char* serverName, uint32_t port) {
 }
 
 void NTP::init(const char* serverName, uint32_t port) {
-	WiFi.hostByName("time.nist.gov", _timeServerIP);
+	WiFi.hostByName(serverName, _timeServerIP);
 	_port = port;
 }
 
